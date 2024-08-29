@@ -1,79 +1,257 @@
-*{
+/* 1. General Styles */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Estilo para el encabezado */
-.header{
-    background-color: #154360; /* Establece el color de fondo del encabezado */
-    display: flex; /* Utiliza un diseño flexible */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-    align-items:center; /* Alinea verticalmente los elementos al centro */
-    height: 60px; /* Establece la altura del encabezado */
-    padding: 0 50px; /* Añade relleno horizontal */
+body {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding-top: 60px; /* Adjust according to header height */
 }
 
-/* Estilo para el encabezado fijo */
-.header .fixed {
-    position: fixed; /* Fija la posición del encabezado */
-    top: 0; /* Lo coloca en la parte superior */
-    left: 0; /* Lo alinea a la izquierda */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+/* 2. Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #154360;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 50px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Estilo para el logo en el encabezado */
-.header .logo{
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
+.header .logo img {
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-/* Estilo para la imagen del logo */
-.header .logo img{
-    height: 50px; /* Establece la altura de la imagen */
-    width: 50px; /* Establece el ancho de la imagen */
-    transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+.header .logo img:hover {
+    transform: scale(1.2);
 }
 
-/* Efecto al pasar el ratón sobre la imagen del logo */
-.header .logo img:hover{
-    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-    display: flex; /* Cambia el tipo de visualización a flexible */
+.header .nav-links {
+    list-style: none;
 }
 
-/* Estilo para los enlaces de navegación */
-.header .nav-links{
-    list-style: none; /* Elimina los marcadores de lista */
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 15px;
 }
 
-/* Estilo para los elementos de la lista de navegación */
-.header .nav-links li{
-    display: inline-block; /* Muestra los elementos en línea */
-    padding: 0 15px; /* Añade relleno horizontal */    
+.header .nav-links li:hover {
+    transform: scale(1.1);
 }
 
-/* Efecto al pasar el ratón sobre los elementos de la lista */
-.header .nav-links li:hover{
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+.header .nav-links a {
+    color: #eceff1;
+    text-decoration: none;
 }
 
-/* Estilo para los enlaces dentro de la lista de navegación */
-.header .nav-links a{
-    color: #eceff1; /* Establece el color del texto */
-    text-decoration: none; /* Elimina el subrayado del enlace */    
+.header .nav-links li a:hover {
+    color: #ffbc0e;
 }
 
-/* Efecto al pasar el ratón sobre los enlaces */
-.header .nav-links li a:hover{
-    color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+/* 3. Main Section Styles */
+main {
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-/* -------------------Codigo de Prueba--------------------*/
+.cover {
+    height: 548px;
+    background: url(/img/I1.jpeg) center center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.directo {
+    background: #777d80;
+    width: 500px;
+    height: 300px;
+    border: 3px solid #000;
+}
+
+.title {
+    font-size: 75px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito';
+}
+
+.slogan {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito';
+    font-size: 20px;
+    padding: 20px;
+}
+
+.btn {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e2f1f8;
+    color: #e7cc88;
+    transform: scale(1.1);
+}
+
+
+
+/* 4. Cards Styles */
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card, .card1 {
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover, .card1:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img, .card1 img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card, .card1 .contenido-card1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3, .card1 .contenido-card1 h3 {
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+.card .contenido-card p, .card1 .contenido-card1 p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a, .card1 .contenido-card1 a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover, .card1 .contenido-card1 a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/* 5. Responsive Styles */
+@media (max-width: 800px) {
+    .header {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header .nav-links li {
+        padding: 0 10px;
+    }
+
+    .cover {
+        height: 600px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .slogan {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .mision {
+        padding: 10px 20px;
+    }
+
+    .column {
+        margin: 10px 50px;
+    }
+
+    .img-columna {
+        height: 150px;
+        width: 200px;
+    }
+
+    .second_page-img {
+        min-width: 450px;
+        height: 300px;
+    }
+
+    h1.estilo {
+        padding: 10px;
+        margin: 0 50px;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        border-color: #a8a8a891;
+    }
+}
+/*footer*/
 footer {
     background-color: #f5f5dc; /* Establece el color de fondo del pie de página */
     padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido del pie de página */
     border-top: 1px solid #000; /* Agrega un borde superior de 1px sólido negro */
-    position: fixed; /* Fija el pie de página en una posición específica en la ventana del navegador */
+    position: relative; /* Fija el pie de página en una posición específica en la ventana del navegador */
     bottom: 0; /* Coloca el pie de página en la parte inferior de la ventana */
     left: 0; /* Alinea el pie de página con el borde izquierdo de la ventana */
     width: 100%; /* Hace que el pie de página ocupe todo el ancho de la ventana */
@@ -167,5 +345,3 @@ footer {
             gap: 20px; /* Añade espacio entre los elementos */
             margin: 25px 0; /* Añade márgenes superior e inferior */
         }
-
-/* Fin de codigo de prueba*/
