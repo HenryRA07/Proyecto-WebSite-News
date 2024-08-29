@@ -4,56 +4,168 @@
     padding: 0;
 }
 
+/* Estilo para el encabezado */
 .header{
-    background-color: #154360;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    height: 60px;
-    padding: 0 50px;
+    background-color: #154360; /* Establece el color de fondo del encabezado */
+    display: flex; /* Utiliza un diseño flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    align-items:center; /* Alinea verticalmente los elementos al centro */
+    height: 60px; /* Establece la altura del encabezado */
+    padding: 0 50px; /* Añade relleno horizontal */
 }
 
+/* Estilo para el encabezado fijo */
+.header .fixed {
+    position: fixed; /* Fija la posición del encabezado */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Lo alinea a la izquierda */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
 
-        .header .fixed {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .header .logo{
-            cursor: pointer;
+/* Estilo para el logo en el encabezado */
+.header .logo{
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
+}
+
+/* Estilo para la imagen del logo */
+.header .logo img{
+    height: 50px; /* Establece la altura de la imagen */
+    width: 50px; /* Establece el ancho de la imagen */
+    transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+}
+
+/* Efecto al pasar el ratón sobre la imagen del logo */
+.header .logo img:hover{
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+    display: flex; /* Cambia el tipo de visualización a flexible */
+}
+
+/* Estilo para los enlaces de navegación */
+.header .nav-links{
+    list-style: none; /* Elimina los marcadores de lista */
+}
+
+/* Estilo para los elementos de la lista de navegación */
+.header .nav-links li{
+    display: inline-block; /* Muestra los elementos en línea */
+    padding: 0 15px; /* Añade relleno horizontal */    
+}
+
+/* Efecto al pasar el ratón sobre los elementos de la lista */
+.header .nav-links li:hover{
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+}
+
+/* Estilo para los enlaces dentro de la lista de navegación */
+.header .nav-links a{
+    color: #eceff1; /* Establece el color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */    
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+.header .nav-links li a:hover{
+    color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* -------------------Codigo de Prueba--------------------*/
+footer {
+    background-color: #f5f5dc; /* Establece el color de fondo del pie de página */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido del pie de página */
+    border-top: 1px solid #000; /* Agrega un borde superior de 1px sólido negro */
+    position: fixed; /* Fija el pie de página en una posición específica en la ventana del navegador */
+    bottom: 0; /* Coloca el pie de página en la parte inferior de la ventana */
+    left: 0; /* Alinea el pie de página con el borde izquierdo de la ventana */
+    width: 100%; /* Hace que el pie de página ocupe todo el ancho de la ventana */
+}
+
+    .footer-container {
+        display: flex; /* Utiliza un diseño flexible para los elementos hijos */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+        align-items: center; /* Alinea verticalmente los elementos hijos al centro */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        color: #333; /* Establece el color del texto */
+        max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    }
+
+    .logo-section {
+        border-right: 1px solid #8d8d8d; /* Agrega un borde derecho gris */
+        text-align: center; /* Centra el texto horizontalmente */
+        padding-right: 40px; /* Añade un espacio interno a la derecha */
+    }
+        .logo-section h1 {
+            font-size: 2em; /* Establece el tamaño de la fuente */
+            margin-bottom: 10px; /* Añade un margen inferior */
         }
 
-        .header .logo img{
-            height: 50px;
-            width: 50px;
-            transition: all 0.3s;
+        .logo-section p {
+            max-width: 250px; /* Limita el ancho máximo del párrafo */
+            font-size: 0.9em; /* Establece el tamaño de la fuente */
+            line-height: 1.5; /* Establece el espaciado entre líneas */
         }
 
-        .header .logo img:hover{
-            transform: scale(1.2);
-            display: flex;
+    .menu-section ul {
+        list-style: none; /* Elimina los marcadores de lista */
+        display: flex; /* Utiliza un diseño flexible */
+        flex-direction: column; /* Organiza los elementos en una columna */
+        gap: 10px; /* Añade espacio entre los elementos de la lista */
+    }
+
+    .menu-section ul li a {
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        color: #333; /* Establece el color del texto */
+        font-weight: bold; /* Hace que el texto sea negrita */
+    }
+
+    .search-section h2 {
+        margin-bottom: 10px; /* Añade un margen inferior */
+    }
+
+    .search-section input[type="text"] {
+        padding: 5px; /* Añade un espacio interno */
+        border: 1px solid #000; /* Agrega un borde negro */
+        border-radius: 5px; /* Redondea las esquinas del input */
+        width: 150px; /* Establece el ancho del input */
+    }
+
+    .social-section {
+        border-left: 1px solid #8d8d8d; /* Agrega un borde izquierdo gris */
+        text-align: center; /* Centra el texto horizontalmente */
+        padding-left: 60px; /* Añade un espacio interno a la izquierda */
+    }
+        .social-section h3 {
+            margin-bottom: 10px; /* Añade un margen inferior */
         }
 
-        .header .nav-links{
-            list-style: none;
+        .social-icons {
+            display: flex; /* Utiliza un diseño flexible */
+            gap: 10px; /* Añade espacio entre los iconos */
+            margin: 20px 0; /* Añade márgenes superior e inferior */
         }
 
-        .header .nav-links li{
-            display: inline-block;
-            padding: 0 15px;    
+        .social-icons img {
+            width: 24px; /* Establece el ancho de las imágenes */
+            height: 24px; /* Establece la altura de las imágenes */
         }
 
-        .header .nav-links li:hover{
-            transform: scale(1.1);
+        .social-section p {
+            margin: 5px 0; /* Añade márgenes superior e inferior */
+            font-size: 0.9em; /* Establece el tamaño de la fuente */
         }
 
-        .header .nav-links a{
-            color: #eceff1;
-            text-decoration: none;    
+        .social-section a {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: #333; /* Establece el color del texto */
         }
 
-        .header .nav-links li a:hover{
-            color: #ffbc0e;
+        .social-section a:hover {
+            text-decoration: underline; /* Añade subrayado al pasar el cursor */
         }
+
+        .data-icons {
+            display: flex; /* Utiliza un diseño flexible */
+            gap: 20px; /* Añade espacio entre los elementos */
+            margin: 25px 0; /* Añade márgenes superior e inferior */
+        }
+
+/* Fin de codigo de prueba*/
