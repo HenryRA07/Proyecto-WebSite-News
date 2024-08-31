@@ -79,8 +79,6 @@ main{
 .bienvenido-rectangulo {
     padding: 10px; /* Espacio interno alrededor del texto */
     text-align: center;/* Alinear el texto al centro */
-    background-color: #578cb4;
-    /*Aqui elimine codigo*/
 }
 /* Estilo para la sección de novedades */
 .novedades {
