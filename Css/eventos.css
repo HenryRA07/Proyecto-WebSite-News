@@ -6,16 +6,17 @@
     
 }
 body{
-    background-color: #ffffff;
+    background-color: #93ACDB;
 }
 /* Estilo para el encabezado */
 .header {
-    background-color: #154360;
+    background-color: #048CF4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     padding: 0 50px;
+    box-shadow: 0 0 30px #000; /*Agregue este codigo */
 }
 
     .header.fixed {
@@ -64,18 +65,22 @@ body{
 
 /*main*/
 main{
-   margin-top: 60px;
+    margin-top: 70px;
+}
+/*Codigo del div padre*/
+.novedades {
+    background-color: #ffffff;
+    border: 1px solid #a3a2a2;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #000;
 }
 /* Estilo para el rectángulo azul con bordes redondeados */
 .bienvenido-rectangulo {
-    background-color: #ffffff; /* Color de fondo azul */
-    color: #6fc0a8; /* Color del texto */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espacio interno alrededor del texto */
-    text-align: center; /* Alinear el texto al centro */
-    margin: 20px auto; /* Espacio exterior y centrar el rectángulo */
-    width: fit-content; /* Ajustar el ancho al contenido */
-    box-shadow: 0 4px 8px rgb(97, 87, 87); /* Sombra sutil para el rectángulo */
+    padding: 10px; /* Espacio interno alrededor del texto */
+    text-align: center;/* Alinear el texto al centro */
+    background-color: #578cb4;
+    /*Aqui elimine codigo*/
 }
 /* Estilo para la sección de novedades */
 .novedades {
@@ -122,9 +127,12 @@ main{
 /* Estilo para la sección de próximas noticias */
 .proximas-noticias {
     padding: 20px;
-    background-color: #7fdcc6;
+    background-color: #ffffff;
     text-align: center;
-    
+    margin: 10px;
+    border: 1px solid #a3a2a2;
+    box-shadow: 0 4px 8px #000;
+    border-radius: 10px;
 
 }
 
@@ -253,6 +261,33 @@ footer {
     border-radius: 5px;
     width: 150px;
 }
+.search-section {
+    text-align: center; /* Asegúrate de que el texto esté centrado en la sección de búsqueda */
+}
+
+.search-section form {
+    display: inline-block; /* Asegura que el formulario no ocupe todo el ancho disponible */
+}
+
+.search-section input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 200px; /* Ajusta el ancho del campo de búsqueda */
+}
+
+.search-section button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #154360;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #ffbc0e;
+}
 
 .social-section {
     border-left: 1px solid #8d8d8d;
@@ -294,7 +329,4 @@ footer {
     gap: 20px;
     margin: 25px 0;
 }
-
-
-
 /* Fin de codigo de prueba*/
