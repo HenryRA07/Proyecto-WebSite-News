@@ -14,60 +14,175 @@
     padding: 0 50px; /* Añade relleno horizontal */
 }
 
-/* Estilo para el encabezado fijo */
-.header .fixed {
-    position: fixed; /* Fija la posición del encabezado */
-    top: 0; /* Lo coloca en la parte superior */
-    left: 0; /* Lo alinea a la izquierda */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    /* Estilo para el encabezado fijo */
+    .header .fixed {
+        position: fixed; /* Fija la posición del encabezado */
+        top: 0; /* Lo coloca en la parte superior */
+        left: 0; /* Lo alinea a la izquierda */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+
+    /* Estilo para el logo en el encabezado */
+    .header .logo{
+        cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
+    }
+
+    /* Estilo para la imagen del logo */
+    .header .logo img{
+        height: 50px; /* Establece la altura de la imagen */
+        width: 50px; /* Establece el ancho de la imagen */
+        transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+    }
+
+    /* Efecto al pasar el ratón sobre la imagen del logo */
+    .header .logo img:hover{
+        transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+        display: flex; /* Cambia el tipo de visualización a flexible */
+    }
+
+    /* Estilo para los enlaces de navegación */
+    .header .nav-links{
+        list-style: none; /* Elimina los marcadores de lista */
+    }
+
+    /* Estilo para los elementos de la lista de navegación */
+    .header .nav-links li{
+        display: inline-block; /* Muestra los elementos en línea */
+        padding: 0 15px; /* Añade relleno horizontal */    
+    }
+
+    /* Efecto al pasar el ratón sobre los elementos de la lista */
+    .header .nav-links li:hover{
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+    }
+
+    /* Estilo para los enlaces dentro de la lista de navegación */
+    .header .nav-links a{
+        color: #eceff1; /* Establece el color del texto */
+        text-decoration: none; /* Elimina el subrayado del enlace */    
+    }
+
+    /* Efecto al pasar el ratón sobre los enlaces */
+    .header .nav-links li a:hover{
+        color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+    }
+
+/*Estilo de la Primera Sección*/
+.first-section {
+    background-color: #fff;
+    border: 1px solid #a3a2a2;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-/* Estilo para el logo en el encabezado */
-.header .logo{
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
-}
+    .left-content {
+        width: 50%;
+        margin: auto 10px;
+    }
 
-/* Estilo para la imagen del logo */
-.header .logo img{
-    height: 50px; /* Establece la altura de la imagen */
-    width: 50px; /* Establece el ancho de la imagen */
-    transition: all 0.3s; /* Añade una transición suave para todos los cambios */
-}
+    .right-content {
+        width: 50%;
+    }
 
-/* Efecto al pasar el ratón sobre la imagen del logo */
-.header .logo img:hover{
-    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-    display: flex; /* Cambia el tipo de visualización a flexible */
-}
 
-/* Estilo para los enlaces de navegación */
-.header .nav-links{
-    list-style: none; /* Elimina los marcadores de lista */
-}
+    .description {
+        text-align: left;
+        margin-bottom: 20px;
+    }
 
-/* Estilo para los elementos de la lista de navegación */
-.header .nav-links li{
-    display: inline-block; /* Muestra los elementos en línea */
-    padding: 0 15px; /* Añade relleno horizontal */    
-}
+        .description h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            
+        }
 
-/* Efecto al pasar el ratón sobre los elementos de la lista */
-.header .nav-links li:hover{
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
-}
+        .description p {
+            font-size: 1rem;
+            color: #333;
+            width: 90%;
+            margin-bottom: 50px;
+        }
 
-/* Estilo para los enlaces dentro de la lista de navegación */
-.header .nav-links a{
-    color: #eceff1; /* Establece el color del texto */
-    text-decoration: none; /* Elimina el subrayado del enlace */    
-}
+        .description a {
+            color: #007bff;
+            text-decoration: none;
+        }
 
-/* Efecto al pasar el ratón sobre los enlaces */
-.header .nav-links li a:hover{
-    color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
-}
+    .mini-announcements {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100%;
+    }
 
+        .mini-item {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .mini-image {
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .mini-text h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .mini-text p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .mini-text a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+    .right-content {
+        flex-grow: 5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+
+
+    }
+    .images {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 2px;
+    }
+
+        .image-item {
+            width: 100%;
+            height: 400px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #848484;
+            
+        }
+
+        .desc {
+            font-size: 0.7rem ;
+            color: #696969
+        }
 /* -------------------Codigo de Prueba--------------------*/
 footer {
     background-color: #f5f5dc; /* Establece el color de fondo del pie de página */
