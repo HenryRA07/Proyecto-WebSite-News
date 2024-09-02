@@ -134,8 +134,19 @@ main {
 }
 
 .title-cards {
-    margin-bottom: 10px;
+    margin: 0 40px 20px 40px;
+    border-bottom: 5px solid #000 ;
+    padding-left: 10px ;
+    padding-bottom: 5px;
+    width: 300px;
+    transition: 2s ease;
 }
+
+        .title-cards:hover {
+            transition: 1s ease;
+            width: 90%;
+            font-size: 1.1rem;
+        }
 .container-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
