@@ -72,11 +72,23 @@ margin-top: 70px;
     color: #6fc0a8; /* Color del texto */
     border-radius: 15px; /* Bordes redondeados */
     padding: 20px; /* Espacio interno alrededor del texto */
-    text-align: center; /* Alinear el texto al centro */
+    text-align: start; /* Alinear el texto al centro */
     margin: 20px auto; /* Espacio exterior y centrar el rectángulo */
     width: fit-content; /* Ajustar el ancho al contenido */
     box-shadow: 0 4px 8px rgb(97, 87, 87); /* Sombra sutil para el rectángulo */
+    margin: 0 40px 20px 40px;
+    border-bottom: 5px solid #000 ;
+    padding-left: 10px ;
+    padding-bottom: 5px;
+    width: 300px;
+    transition: 2s ease;
 }
+
+        .bienvenido-rectangulo:hover {
+            transition: 1s ease;
+            width: 90%;
+            font-size: 1.1rem;
+        }
 /* Estilo para la sección de novedades */
 /*cambio de efecto */
 .novedad {
@@ -126,8 +138,11 @@ margin-top: 70px;
     width: 25%;
     height: auto;
     box-shadow: 0 4px 8px rgb(107, 102, 102);
+    text-align: justify;
 }
-
+.titulo-carta{
+    margin: 10px 0;
+}
 .novedad img {
     width: 100%;
     object-fit: cover;
@@ -149,10 +164,24 @@ margin-top: 70px;
     
 
 }
+.title-noticias{
+    margin-bottom: 10px;
+    margin: 0 40px 20px 40px;
+    border-bottom: 5px solid #000 ;
+    padding-left: 10px ;
+    padding-bottom: 5px;
+    width: 300px;
+    transition: 2s ease;
+}
+
+        .title-noticias:hover {
+            transition: 1s ease;
+            width: 90%;
+            font-size: 1.1rem;
+        }
 
 .proximas-noticias h2 {
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .proximas-container {
