@@ -68,20 +68,13 @@ margin-top: 70px;
 }
 /* Estilo para el rectángulo azul con bordes redondeados */
 .bienvenido-rectangulo {
-    background-color: #ffffff; /* Color de fondo azul */
-    color: #6fc0a8; /* Color del texto */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espacio interno alrededor del texto */
-    text-align: start; /* Alinear el texto al centro */
-    margin: 20px auto; /* Espacio exterior y centrar el rectángulo */
-    width: fit-content; /* Ajustar el ancho al contenido */
-    box-shadow: 0 4px 8px rgb(97, 87, 87); /* Sombra sutil para el rectángulo */
     margin: 0 40px 20px 40px;
     border-bottom: 5px solid #000 ;
     padding-left: 10px ;
     padding-bottom: 5px;
     width: 300px;
     transition: 2s ease;
+    text-align: start;
 }
 
         .bienvenido-rectangulo:hover {
