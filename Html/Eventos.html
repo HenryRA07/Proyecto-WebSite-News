@@ -7,6 +7,7 @@
     <title>Eventos Camilinos</title>
     <meta name="description" content="Sitio Web de Noticias Institucionales de la Unidad Educativa 'Dr. Camilo Gallegos Dominguez' ">
     <link rel="stylesheet" href="/Css/eventos.css">
+    <script src="/JavaScript/eventos.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="Keywords" content="Noticias, Educación">
     <meta name="author" content="Henry Romero, Jandry Gutierrez, Anthony Abad, Emily Cardenas">
@@ -27,13 +28,13 @@
         </nav>
     </header>
     <main>
-        <div class="bienvenido-rectangulo">
-            <h1>Bienvenido a Enventos</h1>
-        </div>
+        
 
     <!-- Sección de novedades -->
     <section class="novedades">
-        
+        <div class="bienvenido-rectangulo">
+            <h1>Eventos</h1>
+        </div>
         <div class="novedades-container">
             <div class="novedad">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jf7LtrhGExezYPj_1_VzYrLUjybviL3c3g&s" alt="Noticia 1">
@@ -130,25 +131,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        function buscarNoticias(event) {
-            event.preventDefault(); // Prevenir que el formulario se envíe normalmente
-    
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const noticias = document.querySelectorAll('.novedad, .proxima-noticia');
-    
-            noticias.forEach((noticia) => {
-                const textoNoticia = noticia.textContent.toLowerCase();
-    
-                if (textoNoticia.includes(query)) {
-                    noticia.style.display = 'block'; // Mostrar noticia si coincide con la búsqueda
-                } else {
-                    noticia.style.display = 'none'; // Ocultar noticia si no coincide
-                }
-            });
-        }
-    </script>
-    
+   
 </body>
 </html>
 
