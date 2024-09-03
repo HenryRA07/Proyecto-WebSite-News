@@ -1,171 +1,396 @@
-*{
+/* 1. General Styles */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Estilo para el encabezado */
-.header{
-    background-color: #154360; /* Establece el color de fondo del encabezado */
-    display: flex; /* Utiliza un diseño flexible */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-    align-items:center; /* Alinea verticalmente los elementos al centro */
-    height: 60px; /* Establece la altura del encabezado */
-    padding: 0 50px; /* Añade relleno horizontal */
+body {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding-top: 60px; /* Adjust according to header height */
 }
 
-/* Estilo para el encabezado fijo */
-.header .fixed {
-    position: fixed; /* Fija la posición del encabezado */
-    top: 0; /* Lo coloca en la parte superior */
-    left: 0; /* Lo alinea a la izquierda */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+/* 2. Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #154360;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 50px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Estilo para el logo en el encabezado */
-.header .logo{
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
+.header .logo img {
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-/* Estilo para la imagen del logo */
-.header .logo img{
-    height: 50px; /* Establece la altura de la imagen */
-    width: 50px; /* Establece el ancho de la imagen */
-    transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+.header .logo img:hover {
+    transform: scale(1.2);
 }
 
-/* Efecto al pasar el ratón sobre la imagen del logo */
-.header .logo img:hover{
-    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-    display: flex; /* Cambia el tipo de visualización a flexible */
+.header .nav-links {
+    list-style: none;
 }
 
-/* Estilo para los enlaces de navegación */
-.header .nav-links{
-    list-style: none; /* Elimina los marcadores de lista */
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 15px;
 }
 
-/* Estilo para los elementos de la lista de navegación */
-.header .nav-links li{
-    display: inline-block; /* Muestra los elementos en línea */
-    padding: 0 15px; /* Añade relleno horizontal */    
+.header .nav-links li:hover {
+    transform: scale(1.1);
 }
 
-/* Efecto al pasar el ratón sobre los elementos de la lista */
-.header .nav-links li:hover{
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+.header .nav-links a {
+    color: #eceff1;
+    text-decoration: none;
 }
 
-/* Estilo para los enlaces dentro de la lista de navegación */
-.header .nav-links a{
-    color: #eceff1; /* Establece el color del texto */
-    text-decoration: none; /* Elimina el subrayado del enlace */    
+.header .nav-links li a:hover {
+    color: #ffbc0e;
 }
 
-/* Efecto al pasar el ratón sobre los enlaces */
-.header .nav-links li a:hover{
-    color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+/* 3. Main Section Styles */
+main {
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.iframe-directo {
+    width:  100%;
+    height: 100%;
+    border: none;
+}
+.cover {
+    height: 548px;
+    background: url(/img/I1.jpeg) center center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* -------------------Codigo de Prueba--------------------*/
+.directo {
+    background: #777d80;
+    width: 600px;
+    height: 400px;
+    border: 3px solid #000;
+}
+
+.title {
+    font-size: 75px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito';
+}
+
+.slogan {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Nunito';
+    font-size: 20px;
+    padding: 20px;
+}
+
+.btn {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e2f1f8;
+    color: #e7cc88;
+    transform: scale(1.1);
+}
+
+
+
+/* 4. Cards Styles */
+.div-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #a3a2a2;
+    box-shadow: 0px 4px 8px #000;
+}
+
+.title-cards {
+    margin-bottom: 10px;
+}
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card, .card1 {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+/*cambio de imagen a video y tamaño*/
+.iframe-video {
+    width:  100%;
+    height: 100%;
+    border: none;
+   
+}
+
+.card:hover, .card1:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img, .card1 img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card, .card1 .contenido-card1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3, .card1 .contenido-card1 h3 {
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+.card .contenido-card p, .card1 .contenido-card1 p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a, .card1 .contenido-card1 a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover, .card1 .contenido-card1 a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/* 5. Responsive Styles */
+@media (max-width: 800px) {
+    .header {
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .header .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header .nav-links li {
+        padding: 0 10px;
+    }
+
+    .cover {
+        height: 600px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .slogan {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .mision {
+        padding: 10px 20px;
+    }
+
+    .column {
+        margin: 10px 50px;
+    }
+
+    .img-columna {
+        height: 150px;
+        width: 200px;
+    }
+
+    .second_page-img {
+        min-width: 450px;
+        height: 300px;
+    }
+
+    h1.estilo {
+        padding: 10px;
+        margin: 0 50px;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        border-color: #a8a8a891;
+    }
+}
+/*Categoria*/
+.Categorias {
+  background-color: lightblue; /* Cambia el color de fondo */
+  width: 200px; /* Ajusta el ancho */
+  height: 300px; /* Ajusta la altura */
+  border-radius: 10px; /* Agrega bordes redondeados */
+  padding: 20px;
+  text-align: left; /* Centra el texto */
+
+}
+.aside {
+    right: 100px;
+}
+/*footer*/
 footer {
-    background-color: #f5f5dc; /* Establece el color de fondo del pie de página */
-    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido del pie de página */
-    border-top: 1px solid #000; /* Agrega un borde superior de 1px sólido negro */
-    position: fixed; /* Fija el pie de página en una posición específica en la ventana del navegador */
-    bottom: 0; /* Coloca el pie de página en la parte inferior de la ventana */
-    left: 0; /* Alinea el pie de página con el borde izquierdo de la ventana */
-    width: 100%; /* Hace que el pie de página ocupe todo el ancho de la ventana */
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-top: 1px solid #000;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-    .footer-container {
-        display: flex; /* Utiliza un diseño flexible para los elementos hijos */
-        justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-        align-items: center; /* Alinea verticalmente los elementos hijos al centro */
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
-        color: #333; /* Establece el color del texto */
-        max-width: 1200px; /* Limita el ancho máximo del contenedor */
-    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #333;
+    max-width: 1200px;
+}
 
-    .logo-section {
-        border-right: 1px solid #8d8d8d; /* Agrega un borde derecho gris */
-        text-align: center; /* Centra el texto horizontalmente */
-        padding-right: 40px; /* Añade un espacio interno a la derecha */
-    }
-        .logo-section h1 {
-            font-size: 2em; /* Establece el tamaño de la fuente */
-            margin-bottom: 10px; /* Añade un margen inferior */
-        }
+.logo-section {
+    border-right: 1px solid #8d8d8d;
+    text-align: center;
+    padding-right: 40px;
+}
+.search-section button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #154360;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .logo-section p {
-            max-width: 250px; /* Limita el ancho máximo del párrafo */
-            font-size: 0.9em; /* Establece el tamaño de la fuente */
-            line-height: 1.5; /* Establece el espaciado entre líneas */
-        }
+.search-section button:hover {
+    background-color: #ffbc0e;
+}
 
-    .menu-section ul {
-        list-style: none; /* Elimina los marcadores de lista */
-        display: flex; /* Utiliza un diseño flexible */
-        flex-direction: column; /* Organiza los elementos en una columna */
-        gap: 10px; /* Añade espacio entre los elementos de la lista */
-    }
+.logo-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
 
-    .menu-section ul li a {
-        text-decoration: none; /* Elimina el subrayado de los enlaces */
-        color: #333; /* Establece el color del texto */
-        font-weight: bold; /* Hace que el texto sea negrita */
-    }
+.logo-section p {
+    max-width: 250px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
 
-    .search-section h2 {
-        margin-bottom: 10px; /* Añade un margen inferior */
-    }
+.menu-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-    .search-section input[type="text"] {
-        padding: 5px; /* Añade un espacio interno */
-        border: 1px solid #000; /* Agrega un borde negro */
-        border-radius: 5px; /* Redondea las esquinas del input */
-        width: 150px; /* Establece el ancho del input */
-    }
+.menu-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-    .social-section {
-        border-left: 1px solid #8d8d8d; /* Agrega un borde izquierdo gris */
-        text-align: center; /* Centra el texto horizontalmente */
-        padding-left: 60px; /* Añade un espacio interno a la izquierda */
-    }
-        .social-section h3 {
-            margin-bottom: 10px; /* Añade un margen inferior */
-        }
+.search-section h2 {
+    margin-bottom: 10px;
+}
 
-        .social-icons {
-            display: flex; /* Utiliza un diseño flexible */
-            gap: 10px; /* Añade espacio entre los iconos */
-            margin: 20px 0; /* Añade márgenes superior e inferior */
-        }
+.search-section input[type="text"] {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 150px;
+}
 
-        .social-icons img {
-            width: 24px; /* Establece el ancho de las imágenes */
-            height: 24px; /* Establece la altura de las imágenes */
-        }
+.social-section {
+    border-left: 1px solid #8d8d8d;
+    text-align: center;
+    padding-left: 60px;
+}
 
-        .social-section p {
-            margin: 5px 0; /* Añade márgenes superior e inferior */
-            font-size: 0.9em; /* Establece el tamaño de la fuente */
-        }
+.social-section h3 {
+    margin-bottom: 10px;
+}
 
-        .social-section a {
-            text-decoration: none; /* Elimina el subrayado de los enlaces */
-            color: #333; /* Establece el color del texto */
-        }
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
 
-        .social-section a:hover {
-            text-decoration: underline; /* Añade subrayado al pasar el cursor */
-        }
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
 
-        .data-icons {
-            display: flex; /* Utiliza un diseño flexible */
-            gap: 20px; /* Añade espacio entre los elementos */
-            margin: 25px 0; /* Añade márgenes superior e inferior */
-        }
+.social-section p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
 
-/* Fin de codigo de prueba*/
+.social-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-section a:hover {
+    text-decoration: underline;
+}
+
+.data-icons {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+}
+
