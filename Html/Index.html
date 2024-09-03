@@ -13,20 +13,22 @@
 
         <link rel="shortcut icon" href="/Proyecto_Sihome_v2.0/Sihome_v2.0/Html/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/Css/style.css" type="text/css">
+        <script src="/JavaScript/principal.js"></script>
         <script src="https://kit.fontawesome.com/ac27df3b5f.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header class="header fixed">
             <div class="logo">
-                <a href=""><img src="/img/logo.svg" alt="Logo del proyecto"></a>
+                <a href=""><img src="/img/logo-solo.svg" alt="Logo del proyecto"></a>
 
             </div>
 
             <nav>
                 <ul class="nav-links">
-                    <li><a href="pag1.html">Deportes</a></li>
-                    <li><a href="pag2.html">Eventos</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Deportes.html">Deportes</a></li>
+                    <li><a href="Eventos.html">Eventos</a></li>
                 </ul>
             </nav>
         </header>
@@ -56,7 +58,7 @@
                     <!-- cards 3  -->
                     <div class="card">
                         <figure>
-                            <img src="/img/Engalanamiento (1).jpg" class="iframe-video"> 
+                            <img src="/img/Principal/Engalanamiento.jpg" class="iframe-video"> 
                             </iframe>
                         </figure>
 
@@ -69,7 +71,7 @@
 
                     <div class="card">
                         <figure>
-                            <img src="/img/Pinceles por la paz .jpg" class="iframe-video">
+                            <img src="/img/Principal/Pinceles por la paz .jpg" class="iframe-video">
                             </img>
                         </figure>
 
@@ -144,14 +146,6 @@
                     <h2>N | C</h2>
                     <p>Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías en demostraciones de tipografíasen</p>
                 </div>
-                <div class="menu-section">
-                    <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">DEPORTES</a></li>
-                        <li><a href="#">EVENTOS</a></li>
-                        <li><a href="#">OTROS</a></li>
-                    </ul>
-                </div>
                 
                 <div class="search-section">
                     <center><h2>Buscar</h2></center>
@@ -174,34 +168,6 @@
                 </div>
             </div>
         </footer>
-        <!--funcionalidad del buscador-->
-        <script>
-            function buscarNoticias(event) {
-                event.preventDefault(); // Prevenir que el formulario se envíe normalmente
-
-                const query = document.getElementById('searchInput').value.toLowerCase().trim();
-                const tarjetas = document.querySelectorAll('.card, .card1');
-
-                let resultadosEncontrados = false;
-
-                tarjetas.forEach((tarjeta) => {
-                    const titulo = tarjeta.querySelector('h3').textContent.toLowerCase();
-                    const descripcion = tarjeta.querySelector('p').textContent.toLowerCase();
-
-
-                    if (titulo.includes(query) || descripcion.includes(query)) {
-                        tarjeta.style.display = 'block'; // Mostrar tarjeta si coincide con la búsqueda
-                        resultadosEncontrados = true;
-                    } else {
-                        tarjeta.style.display = 'none'; // Ocultar tarjeta si no coincide
-                    }
-                });
-
-                if (!resultadosEncontrados) {
-                    alert('No se encontraron resultados para "' + query + '".');
-                }
-            }
-        </script>
         
     </body>
 </html>

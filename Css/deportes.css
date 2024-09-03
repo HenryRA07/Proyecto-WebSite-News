@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -39,6 +42,7 @@ body {
 
     /* Efecto al pasar el ratón sobre la imagen del logo */
     .header .logo img:hover{
+        transition: all 1s ease;
         transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
         display: flex; /* Cambia el tipo de visualización a flexible */
     }
@@ -56,6 +60,7 @@ body {
 
     /* Efecto al pasar el ratón sobre los elementos de la lista */
     .header .nav-links li:hover{
+        transition: all 1s ease;
         transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
     }
 
@@ -223,7 +228,7 @@ body {
 }
         .galeria {
             display: flex;
-            width: 70%;
+            width: 60%;
             height: 430px;
             margin: auto;
             
@@ -365,19 +370,6 @@ footer {
     max-width: 250px;
     font-size: 0.9em;
     line-height: 1.5;
-}
-
-.menu-section ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-section ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
 }
 
 .search-section h2 {
