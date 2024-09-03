@@ -6,6 +6,7 @@
     <title>Deportes Camilinos</title>
     <meta name="description" content="Sitio Web de Noticias Institucionales de la Unidad Educativa 'Dr. Camilo Gallegos Dominguez' ">
     <link rel="stylesheet" href="/Css/deportes.css">
+    <script src="/JavaScript/deportes.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="Keywords" content="Noticias, Educación ">
     <meta name="author" content="Henry Romero, Jandry Gutierrez, Anthony Abad, Emily Cardenas, ">
@@ -14,9 +15,8 @@
     <!--  Encabezado de la pagina, aqui muestro un navbar con sus respectivos logos e hipervinculos hacia las otras paginas  -->
     <header class="header fixed">
         <div class="logo">
-            <a href="Index.html"><img src="img/logo.png" alt="Logo del proyecto"></a>
+            <a href="Index.html"><img src="/img/logo-solo.svg" alt="Logo del proyecto"></a>
         </div>
-
         <!--  Hipervinculos  -->
         <nav>
             <ul class="nav-links">
@@ -24,6 +24,135 @@
                 <li><a href="Eventos.html">Eventos</a></li>
             </ul>
         </nav>
-</header>
+    </header>
+
+    <!--Contenido de la página-->
+    <main>
+        <!--  Primera Sección  -->
+        <section class="first-section">
+            <!--  Contenido  -->
+            <div class="left-content">
+                <div class="description">
+                    <div class="title-description"> <h1>Deporte</h1></div>
+                    <div class="p-desc"><p>Como institución, apoyamos el deporte al proporcionar fondos recaudados y asegurar que nuestros deportistas puedan seguir con sus estudios sin problemas. Facilitamos su participación en competencias mientras mantenemos su compromiso académico intacto.
+                        <a href="#">Leer más -></a>
+                    </p></div>
+                    
+                </div>
+                <div class="mini-announcements">
+                    <div class="mini-item">
+                        
+                        <div class="mini-text">
+                            <h3>Futbol</h3>
+                            <p> En nuestra institución educativa se promueve el fútbol mediante torneos internos y el acceso a canchas bien cuidadas.
+                                <a href="#">Leer más -></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-item">
+                        <div class="mini-text">
+                            <h3>Basquet</h3>
+                            <p>El baloncesto en nuestra institución se apoya con torneos regulares y canchas bien equipadas. 
+                                <a href="#">Leer más -></a>
+                            </p>
+                        </div>
+                </div>
+            </div><!--dfsdfd-->
+        
+                <div class="right-content">
+                    <div class="images">
+                        <img src="/img/deportes/1.jpg" class="image-item" alt="">
+                        <img src="/img/deportes/2.jpg" class="image-item" alt="">
+                        <img src="/img/deportes/3.jpg" class="image-item" alt="">
+                        
+                    </div>
+                    <div class="desc">
+                        <p>Imagenes que fomentan el Deporte. </p>
+                    </div>
+                </div>
+
+                
+
+        </section>
+
+        <!--  Segunda Sección  -->
+        <section class="second-section">
+
+            <div class="galeria">
+                <img src="/img/deportes/2.jpg" alt="">
+                <img src="/img/deportes/4.jpg" alt="">
+                <img src="/img/deportes/5.jpg" alt="">
+            </div>
+
+            <div class="news">
+                <div class="news-items">
+                    <div class="desc-news">
+                        <h3>Atletismo</h3>
+                        <p>Impulsamos el éxito de nuestros estudiantes en el atletismo al brindarles flexibilidad para competencias sin descuidar sus estudios, garantizando que puedan sobresalir en ambos ámbitos con el apoyo adecuado.
+                            <a href="http://youtube.com">Leer más -></a></p>
+                        
+                    </div>
+                </div>
+
+                <div class="news-items">
+                    <div class="desc-news">
+                        <h3>Ciclismo</h3>
+                        <p> Elevamos el rendimiento de nuestros ciclistas jóvenes al proporcionarles el respaldo necesario para sus competiciones, permitiéndoles mantener un equilibrio perfecto entre sus entrenamientos y sus responsabilidades académicas.
+                            <a href="http://youtube.com">Leer más -></a> </p>
+                        
+                    </div>
+                </div>
+                    <div class="news-items">
+                        
+                        <div class="desc-news">
+                            <h3>Taekwondo</h3>
+                            <p>Con entusiasmo apoyamos a nuestros talentosos practicantes de taekwondo, ofreciéndoles la posibilidad de destacar en torneos mientras gestionan su carga académica, asegurando un desarrollo integral sin compromisos. <a href="http://youtube.com">Leer más -></a> </p>
+                            
+                        </div>
+                    </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo-section">
+                <h2>N | C</h2>
+                <p>Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías en demostraciones de tipografíasen</p>
+            </div>
+            <div class="menu-section">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">DEPORTES</a></li>
+                    <li><a href="#">EVENTOS</a></li>
+                    <li><a href="#">OTROS</a></li>
+                </ul>
+            </div>
+            
+            <div class="search-section">
+                <center><h2>Buscar</h2></center>
+                <form id="searchForm" onsubmit="return buscarNoticias(event)">
+                    <input type="text" id="searchInput" placeholder="Buscar Noticias">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>           
+            <div class="social-section">
+                <h3>¡Sígueme!</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook">Facebook</a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube">YouTube</a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram">Instagram</a>
+                </div>
+                <div class="data-icons">
+                    <p><img src="" alt="Correo Electrónico"><a href="mailto:coldr.camilo@gmail.com">coldr.camilo@gmail.com</a></p>
+                    <p><img src="" alt="Dirección"> Dirección</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

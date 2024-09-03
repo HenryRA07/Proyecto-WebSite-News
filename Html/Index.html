@@ -20,6 +20,7 @@
         <header class="header fixed">
             <div class="logo">
                 <a href=""><img src="/img/logo.svg" alt="Logo del proyecto"></a>
+
             </div>
 
             <nav>
@@ -186,6 +187,7 @@
                 tarjetas.forEach((tarjeta) => {
                     const titulo = tarjeta.querySelector('h3').textContent.toLowerCase();
                     const descripcion = tarjeta.querySelector('p').textContent.toLowerCase();
+
 
                     if (titulo.includes(query) || descripcion.includes(query)) {
                         tarjeta.style.display = 'block'; // Mostrar tarjeta si coincide con la búsqueda
