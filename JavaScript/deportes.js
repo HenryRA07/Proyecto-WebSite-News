@@ -1,4 +1,3 @@
-
 function buscarNoticias(event) {
     event.preventDefault(); // Prevenir que el formulario se envíe normalmente
 
@@ -23,3 +22,4 @@ function buscarNoticias(event) {
         alert('No se encontraron resultados para "' + query + '".');
     }
 }
+
