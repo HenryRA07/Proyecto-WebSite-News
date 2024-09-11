@@ -159,7 +159,7 @@ main {
     width:  100%;
     height: 100%;
     border: none;
-   
+    object-fit: cover;
 }
 
 .card:hover, .card1:hover {
