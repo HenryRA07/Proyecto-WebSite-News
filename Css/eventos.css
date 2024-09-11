@@ -131,11 +131,11 @@ margin-top: 70px;
 .novedad {
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     width: 25%;
     height: auto;
-    box-shadow: 0 4px 8px rgb(107, 102, 102);
+    box-shadow: 0 4px 8px #000;
     text-align: justify;
 }
 .titulo-carta{
@@ -157,10 +157,11 @@ margin-top: 70px;
 /* Estilo para la sección de próximas noticias */
 .proximas-noticias {
     padding: 20px;
-    background-color: #7fdcc6;
+    background-color: #f3e4e4;
     text-align: center;
-    
-
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #000;
+    border: 1px solid #ddd;
 }
 .title-noticias{
     margin-bottom: 10px;
