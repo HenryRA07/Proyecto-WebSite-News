@@ -156,13 +156,15 @@ margin-top: 70px;
 
 /* Estilo para la sección de próximas noticias */
 .proximas-noticias {
-    padding: 20px;
-    background-color: #f3e4e4;
+    padding: 15px;
+    background-color: #fff;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px #000;
-    border: 1px solid #ddd;
+    border: 2px solid #fff;
+    margin: 10px;
 }
+
 .title-noticias{
     margin-bottom: 10px;
     margin: 0 40px 20px 40px;
@@ -170,6 +172,7 @@ margin-top: 70px;
     padding-left: 10px ;
     padding-bottom: 5px;
     width: 300px;
+    text-align: start;
     transition: 2s ease;
 }
 
@@ -205,7 +208,8 @@ margin-top: 70px;
 }
 .imagen-eventos{
     width: 100%;
-    height: 100%;
+    height: 300px;
+    border-radius: 5px;
 }
 .video-descripcion {
     flex: 1;
@@ -255,7 +259,6 @@ footer {
 }
 
 .logo-section {
-    border-right: 1px solid #8d8d8d;
     text-align: center;
     padding-right: 40px;
 }
@@ -269,7 +272,15 @@ footer {
 }
 
 .search-section button:hover {
-    background-color: #ffbc0e;
+    transform:translateY(-3%);
+    transition: all 0.2s ease;
+}
+
+.search-section {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0 40px;
+    height: 150px;
 }
 
 .logo-section h1 {
@@ -295,7 +306,6 @@ footer {
 }
 
 .social-section {
-    border-left: 1px solid #8d8d8d;
     text-align: center;
     padding-left: 60px;
 }
