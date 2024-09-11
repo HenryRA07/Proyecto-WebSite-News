@@ -9,7 +9,7 @@
     
 }
 body{
-    background-color: #ffffff;
+    background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
 }
 /* Estilo para el encabezado */
 .header {
@@ -344,7 +344,3 @@ footer {
     gap: 20px;
     margin: 25px 0;
 }
-
-
-
-/* Fin de codigo de prueba*/
