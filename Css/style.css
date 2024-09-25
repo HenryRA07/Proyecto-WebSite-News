@@ -14,6 +14,53 @@ body {
     padding-top: 60px; 
 }
 
+/*Estilos para hacer un slpash screen con palabras*/
+        /* Estilos del splash screen */
+        #splash {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #ffffff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 1s ease;
+
+            /*Codigo agregado para que se desvanezca*/
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease, visibility 0s 1s; /* El tiempo de transición puede ajustarse */
+
+        }
+
+        .splash-content h1 {
+            font-size: 3rem;
+        }
+
+        /*Codigo agregado para que se desvanezca*/
+        #splash.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease, visibility 0s 1s;
+        }
+        /*00000*/
+
+        .splash-content p {
+            font-size: 1.2rem;
+        }
+
+        /* Ocultar el contenido principal mientras el splash está activo */
+        #main-content {
+            display: none;
+        }
+
+        /* Mostrar el contenido principal una vez que el splash desaparece */
+        .show-content #main-content {
+            display: block;
+        }
+
 /* 1.Estilos de Encabezado o NavBar */
 .header {
     position: fixed;
