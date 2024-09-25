@@ -12,126 +12,155 @@
     <meta name="Keywords" content="Noticias, Educación">
     <meta name="author" content="Henry Romero, Jandry Gutierrez, Anthony Abad, Emily Cardenas">
 </head>
+
 <body>
+    
     <!-- Encabezado de la página -->
     <header class="header fixed">
+        
+        <!-- Logo -->
         <div class="logo">
+
             <a href="Index.html"><img src="/img/logo-solo.svg" alt="Logo del proyecto"></a>
+
         </div>
 
         <!-- Hipervínculos -->
         <nav>
+
             <ul class="nav-links">
+
                 <li><a href="Index.html">Inicio</a></li>
                 <li><a href="Deportes.html">Deportes</a></li>
                 <li><a href="Eventos.html">Eventos</a></li>
+
             </ul>
+
         </nav>
+
     </header>
+
+    <!-- Cuerpo -->
     <main>
         
-
-    <!-- Sección de novedades -->
-    <section class="novedades">
-        <div class="bienvenido-rectangulo">
-            <h1>Eventos</h1>
-        </div>
-        <div class="novedades-container">
-            <div class="novedad">
-                <img src="/img/Eventos/Engalanamiento.jpg" alt="Noticia 1">
-                <h3 class="titulo-carta">Engalanamiento de la institución y programa Artístico:</h3>
-                <p>El 2 de septiembre inician las festividades por el 38º aniversario de la Unidad Educativa "Dr. Camilo Gallegos Domínguez". El primer día, la comunidad educativa embellecerá las instalaciones del colegio.</p>
-            </div>
-            <div class="novedad">
-                <img src="/img/Eventos/Piceles por la paz .jpg" alt="Noticia 2">
-                <h3 class="titulo-carta"> Viernes De Colores:</h3>
-                <p>Se realizó el concurso intercolegial "Pinceles por la Paz" como parte del plan "Gymkhana de buenas acciones", con la participación entusiasta de estudiantes del Distrito de Educación Arenillas-Huaquillas-Las Lajas en el Viernes de Colores, destacándose en baile, danza y canto.</p>
-            </div>
-            <div class="novedad">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jf7LtrhGExezYPj_1_VzYrLUjybviL3c3g&s" alt="Noticia 2">
-                <h3 class="titulo-carta">Expociencia y Tecnología Camilo 2024:</h3>
-                <p>El evento destacará la Radio Digital Camilina, creada por estudiantes de Tercero Informática A, y contará con la participación de diversas instituciones en la expo feria.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de próximas noticias -->
-    <section class="proximas-noticias">
-        <div class="title-noticias">
-            <h2>Próximas Noticias</h2>
-        </div>
-        <div class="proximas-container">
-            <div class="proxima-noticia">
-                <div class="video">
-                    <img src="/img/Eventos/paz por los pinceles .jpg" class="imagen-eventos">
-                </div>
-                <div class="video-descripcion">
-                    <h3>Pinceladas por la Paz</h3>
-                    <p>"Pinceladas por la Paz" es un concurso intercolegial que usa el arte para promover la paz. Los estudiantes crean obras que reflejan su visión de la armonía, fomentando la creatividad y la colaboración.</p>
-                </div>
-            </div>
-            <div class="proxima-noticia">
-                <div class="video">
-                    <img src="/img/Eventos/Dia de la familia.jpg" class="imagen-eventos"></img>
-                </div>
-                <div class="video-descripcion">
-                    <h3>Dia de la familia </h3>
-                    <p>
-                        El "Día de la Familia" celebra la unidad y el amor familiar con actividades y eventos que refuerzan los lazos y promueven el disfrute conjunto. Es una oportunidad para valorar y disfrutar el tiempo con los seres queridos.</p>
-                </div>
-            </div>
-            <div class="proxima-noticia">
-                <div class="video">
-                    <img src="/img/Principal/semana-rosa.jpeg" class="imagen-eventos">
-                </div>
-                <div class="video-descripcion">
-                    <h3>Semana Rosa</h3>
-                    <p>La "Semana Rosa" es una celebración dedicada a fomentar el amor por la lectura, con actividades como lecturas en voz alta y clubes de lectura para promover el interés en los libros y la educación.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer>
-        <div class="footer-container">
-            <div class="logo-section">
-                <h1>D | C</h1>
-                <p>¡Gracias por visitar nuestro sitio web! Tu interés es muy valioso para nosotros. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos.</p>
+        <!-- Sección de novedades -->
+        <section class="news">
+            <!-- Título de la sección -->
+            <div class="title-news"> 
+                <h1>Eventos</h1>
             </div>
             
-            <div class="search-section">
-                <center><h2>Buscar</h2></center>
-                <form id="searchForm" onsubmit="return buscarNoticias(event)">
-                    <input type="text" id="searchInput" placeholder="Buscar Noticias">
-                    <button type="submit">Buscar</button>
-                </form>
-            </div>           
-            <div class="social-section">
-                <h3>¡Sígueme!</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                        Facebook</a>
-                        <a href="https://www.youtube.com/@colegiodr.camilogallegosdo695/videos" target="_blank" title="YouTube">
-                            <i class="fab fa-youtube"></i>
-                            YouTube</a>
-                            <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                                Instagram</a>
+            <!-- Caja de noticias de novedades -->
+            <div class="container-news">
+
+                <!-- carta 1 -->
+                <div class="novelty">
+                    <img src="/img/Eventos/Engalanamiento.jpg" alt="Noticia 1">
+                    <h3 class="title-novelty">Engalanamiento de la institución y programa Artístico:</h3>
+                    <p>El 2 de septiembre inician las festividades por el 38º aniversario de la Unidad Educativa "Dr. Camilo Gallegos Domínguez". El primer día, la comunidad educativa embellecerá las instalaciones del colegio.</p>
                 </div>
-                <div class="data-icons">
-                    <a href="mailto:example@example.com" target="_blank" title="Correo Electrónico">
-                        <i class="fas fa-envelope"></i>
-                    <br>Correo electrónico</a>
-                    <a href="https://maps.app.goo.gl/jxykMNoA6SBhsdKP9" target="_blank" title="Dirección">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Dirección
-                    </a> 
+
+                <!-- carta 2 -->
+                <div class="novelty">
+                    <img src="/img/Eventos/Piceles por la paz .jpg" alt="Noticia 2">
+                    <h3 class="title-novelty"> Viernes De Colores:</h3>
+                    <p>Se realizó el concurso intercolegial "Pinceles por la Paz" como parte del plan "Gymkhana de buenas acciones", con la participación entusiasta de estudiantes del Distrito de Educación Arenillas-Huaquillas-Las Lajas en el Viernes de Colores, destacándose en baile, danza y canto.</p>
+                </div>
+
+                <!-- carta 3 -->
+                <div class="novelty">
+                    <img src="/img/Principal/Expoferia.jpeg" alt="Noticia 2">
+                    <h3 class="title-novelty">Expociencia y Tecnología Camilo 2024:</h3>
+                    <p>El evento destacará la Radio Digital Camilina, creada por estudiantes de Tercero Informática A, y contará con la participación de diversas instituciones en la expo feria.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección de próximas noticias -->
+        <section class="more_news">
+
+            <div class="title-more_news">
+                <h2>Próximas Noticias</h2>
+            </div>
+
+            <div class="container-more_news">
+
+                <div class="news-items">
+
+                    <div class="div-img-news">
+                        <img src="/img/Eventos/paz por los pinceles .jpg" class="img-events">
+                    </div>
+
+                    <div class="desc-news">
+                        <h3>Pinceladas por la Paz</h3>
+                        <p>"Pinceladas por la Paz" es un concurso intercolegial que usa el arte para promover la paz. Los estudiantes crean obras que reflejan su visión de la armonía, fomentando la creatividad y la colaboración.</p>
+                    </div>
+                </div>
+
+                <div class="news-items">
+                    <div class="div-img-news">
+                        <img src="/img/Eventos/Dia de la familia.jpg" class="img-events"></img>
+                    </div>
+                    <div class="desc-news">
+                        <h3>Dia de la familia </h3>
+                        <p>
+                            El "Día de la Familia" celebra la unidad y el amor familiar con actividades y eventos que refuerzan los lazos y promueven el disfrute conjunto. Es una oportunidad para valorar y disfrutar el tiempo con los seres queridos.</p>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <div class="div-img-news">
+                        <img src="/img/Principal/semana-rosa.jpeg" class="img-events">
+                    </div>
+                    <div class="desc-news">
+                        <h3>Semana Rosa</h3>
+                        <p>La "Semana Rosa" es una celebración dedicada a fomentar el amor por la lectura, con actividades como lecturas en voz alta y clubes de lectura para promover el interés en los libros y la educación.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer-container">
+                <div class="logo-section">
+                    <h1>D | C</h1>
+                    <p>¡Gracias por visitar nuestro sitio web! Tu interés es muy valioso para nosotros. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos.</p>
+                </div>
+                
+                <div class="search-section">
+                    <center><h2>Buscar</h2></center>
+                    <form id="searchForm" onsubmit="return buscarNoticias(event)">
+                        <input type="text" id="searchInput" placeholder="Buscar Noticias">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>           
+                <div class="social-section">
+                    <h3>¡Sígueme!</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook</a>
+                            <a href="https://www.youtube.com/@colegiodr.camilogallegosdo695/videos" target="_blank" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                YouTube</a>
+                                <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                    </div>
+                    <div class="data-icons">
+                        <a href="mailto:example@example.com" target="_blank" title="Correo Electrónico">
+                            <i class="fas fa-envelope"></i>
+                        <br>Correo electrónico</a>
+                        <a href="https://maps.app.goo.gl/jxykMNoA6SBhsdKP9" target="_blank" title="Dirección">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Dirección
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
 
