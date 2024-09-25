@@ -9,7 +9,8 @@
 body {
     background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
 }
-/* Estilo para el encabezado */
+
+/* 1. Estilo para el encabezado */
 .header{
     background-color: #154360; /* Establece el color de fondo del encabezado */
     display: flex; /* Utiliza un diseño flexible */
@@ -33,47 +34,47 @@ body {
         cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
     }
 
-    /* Estilo para la imagen del logo */
-    .header .logo img{
-        height: 50px; /* Establece la altura de la imagen */
-        width: 50px; /* Establece el ancho de la imagen */
-        transition: all 0.3s; /* Añade una transición suave para todos los cambios */
-    }
+        /* Estilo para la imagen del logo */
+        .header .logo img{
+            height: 50px; /* Establece la altura de la imagen */
+            width: 50px; /* Establece el ancho de la imagen */
+            transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+        }
 
-    /* Efecto al pasar el ratón sobre la imagen del logo */
-    .header .logo img:hover{
-        transition: all 1s ease;
-        transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-        display: flex; /* Cambia el tipo de visualización a flexible */
-    }
+            /* Efecto al pasar el ratón sobre la imagen del logo */
+            .header .logo img:hover{
+                transition: all 1s ease;
+                transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+                display: flex; /* Cambia el tipo de visualización a flexible */
+            }
 
     /* Estilo para los enlaces de navegación */
     .header .nav-links{
         list-style: none; /* Elimina los marcadores de lista */
     }
 
-    /* Estilo para los elementos de la lista de navegación */
-    .header .nav-links li{
-        display: inline-block; /* Muestra los elementos en línea */
-        padding: 0 15px; /* Añade relleno horizontal */    
-    }
+        /* Estilo para los elementos de la lista de navegación */
+        .header .nav-links li{
+            display: inline-block; /* Muestra los elementos en línea */
+            padding: 0 15px; /* Añade relleno horizontal */    
+        }
 
-    /* Efecto al pasar el ratón sobre los elementos de la lista */
-    .header .nav-links li:hover{
-        transition: all 1s ease;
-        transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
-    }
+            /* Efecto al pasar el ratón sobre los elementos de la lista */
+            .header .nav-links li:hover{
+                transition: all 1s ease;
+                transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+            }
 
-    /* Estilo para los enlaces dentro de la lista de navegación */
-    .header .nav-links a{
-        color: #eceff1; /* Establece el color del texto */
-        text-decoration: none; /* Elimina el subrayado del enlace */    
-    }
+        /* Estilo para los enlaces dentro de la lista de navegación */
+        .header .nav-links a{
+            color: #eceff1; /* Establece el color del texto */
+            text-decoration: none; /* Elimina el subrayado del enlace */    
+        }
 
-    /* Efecto al pasar el ratón sobre los enlaces */
-    .header .nav-links li a:hover{
-        color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
-    }
+            /* Efecto al pasar el ratón sobre los enlaces */
+            .header .nav-links li a:hover{
+                color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+            }
 
 /*Estilo de la Primera Sección*/
 .first-section {
@@ -93,91 +94,86 @@ body {
         margin: auto 10px;
     }
 
-    .right-content {
-        width: 50%;
-    }
-
-
-    .description {
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-        .title-description{
-            font-size: 1.5rem;
-            font-weight: bold;
+        .description {
+            text-align: left;
             margin-bottom: 20px;
-            padding-left: 5px;
-            margin: 0 0px 20px 00px;
-            border-bottom: 5px solid #000 ;
-            padding-left: 10px ;
-            padding-bottom: 5px;
-            width: 200px;
-            transition: 2s ease;
         }
-    
-            .title-description:hover {
-                transition: 1s ease;
+
+            .title-description{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+                padding-left: 5px;
+                margin: 0 0px 20px 00px;
+                border-bottom: 5px solid #000 ;
+                padding-left: 10px ;
+                padding-bottom: 5px;
+                width: 200px;
+                transition: 2s ease;
+            }
+        
+                .title-description:hover {
+                    transition: 1s ease;
+                    width: 90%;
+                    font-size: 1.1rem;
+                }
+
+            .description p {
+                font-size: 1rem;
+                color: #555;
                 width: 90%;
-                font-size: 1.1rem;
+                margin-bottom: 50px;
             }
 
-        .description p {
-            font-size: 1rem;
-            color: #555;
-            width: 90%;
-            margin-bottom: 50px;
-        }
+            .description p:hover {
+                transition: .7s ease;
+                font-size: 1.01rem;
+                color: #111;
+            }
 
-        .description p:hover {
-            transition: .7s ease;
-            font-size: 1.01rem;
-            color: #111;
-        }
+            .description a {
+                color: #007bff;
+                text-decoration: none;
+            }
 
-
-
-        .description a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-    .mini-announcements {
-        display: flex;
-
-        flex-direction: flex-start;
-        width: 100%;
-    }
-
-        .mini-item {
+        .mini-announcements {
             display: flex;
-            align-items: center;
-            width: 80%;
-            margin-bottom: 10px;
+
+            flex-direction: flex-start;
+            width: 100%;
         }
 
+            .mini-item {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                margin-bottom: 10px;
+            }
 
-        .mini-text h3 {
-            margin: 0;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
 
-        .mini-text p {
-            margin-left: 10px;
-            font-size: 0.9rem;
-            color: #333;
-        }
+            .mini-text h3 {
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
 
-        .mini-text a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        
+            .mini-text p {
+                margin-left: 10px;
+                font-size: 0.9rem;
+                color: #333;
+            }
+
+            .mini-text a {
+                color: #007bff;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+
+
     .right-content {
         flex-grow: 5;
         display: flex;
+        width: 50%;
         flex-direction: column;
         flex-wrap:nowrap;
 
