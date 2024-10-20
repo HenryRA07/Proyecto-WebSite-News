@@ -10,125 +10,13 @@ body {
     background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
 }
 
-/*Estilos para hacer un slpash screen con palabras*/
-        /* Estilos del splash screen */
-        #splash {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background-color: #ffffff;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            transition: opacity 1s ease;
-
-            /*Codigo agregado para que se desvanezca*/
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 1s ease, visibility 0s 1s; /* El tiempo de transición puede ajustarse */
-
-        }
-
-        .splash-content h1 {
-            font-size: 3rem;
-        }
-
-        /*Codigo agregado para que se desvanezca*/
-        #splash.hidden {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 1s ease, visibility 0s 1s;
-        }
-        /*00000*/
-
-        .splash-content p {
-            font-size: 1.2rem;
-        }
-
-        /* Ocultar el contenido principal mientras el splash está activo */
-        #main-content {
-            display: none;
-        }
-
-        /* Mostrar el contenido principal una vez que el splash desaparece */
-        .show-content #main-content {
-            display: block;
-        }
-
-/* 1. Estilo para el encabezado */
-.header{
-    background-color: #154360; /* Establece el color de fondo del encabezado */
-    display: flex; /* Utiliza un diseño flexible */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-    align-items:center; /* Alinea verticalmente los elementos al centro */
-    height: 60px; /* Establece la altura del encabezado */
-    padding: 0 50px; /* Añade relleno horizontal */
-}
-
-    /* Estilo para el encabezado fijo */
-    .header .fixed {
-        position: fixed; /* Fija la posición del encabezado */
-        top: 0; /* Lo coloca en la parte superior */
-        left: 0; /* Lo alinea a la izquierda */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    }
-
-    /* Estilo para el logo en el encabezado */
-    .header .logo{
-        cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
-    }
-
-        /* Estilo para la imagen del logo */
-        .header .logo img{
-            height: 50px; /* Establece la altura de la imagen */
-            width: 50px; /* Establece el ancho de la imagen */
-            transition: all 0.3s; /* Añade una transición suave para todos los cambios */
-        }
-
-            /* Efecto al pasar el ratón sobre la imagen del logo */
-            .header .logo img:hover{
-                transition: all 1s ease;
-                transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-                display: flex; /* Cambia el tipo de visualización a flexible */
-            }
-
-    /* Estilo para los enlaces de navegación */
-    .header .nav-links{
-        list-style: none; /* Elimina los marcadores de lista */
-    }
-
-        /* Estilo para los elementos de la lista de navegación */
-        .header .nav-links li{
-            display: inline-block; /* Muestra los elementos en línea */
-            padding: 0 15px; /* Añade relleno horizontal */    
-        }
-
-            /* Efecto al pasar el ratón sobre los elementos de la lista */
-            .header .nav-links li:hover{
-                transition: all 1s ease;
-                transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
-            }
-
-        /* Estilo para los enlaces dentro de la lista de navegación */
-        .header .nav-links a{
-            color: #eceff1; /* Establece el color del texto */
-            text-decoration: none; /* Elimina el subrayado del enlace */    
-        }
-
-            /* Efecto al pasar el ratón sobre los enlaces */
-            .header .nav-links li a:hover{
-                color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
-            }
 
 /*Estilo de la Primera Sección*/
 .first-section {
     background-color: #fff;
     border: 1px solid #a3a2a2;
     border-radius: 10px;
-    margin: 15px;
+    margin: 15px 50px;
     box-shadow: 0 4px 8px #000;
     display: flex;
     flex-direction: row;
@@ -263,7 +151,7 @@ body {
 .second-section{
     background-color: #fff;
     border: 1px solid #a3a2a2;
-    margin: 15px; 
+    margin: 15px 50px; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #000;
@@ -363,113 +251,3 @@ body {
 
 }
 
-
-/* -------------------Codigo de Prueba--------------------*/
-/*footer*/
-/* Estilo para el pie de página */
-footer {
-    background-color: #f5f5dc;
-    padding: 20px;
-    border-top: 1px solid #000;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    color: #333;
-    max-width: 1200px;
-}
-
-.logo-section {
-    text-align: center;
-    padding-right: 40px;
-}
-.search-section button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #154360;
-    color: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-section button:hover {
-    transform:translateY(-3%);
-    transition: all 0.2s ease;
-}
-
-.search-section {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    padding: 0 40px;
-    height: 150px;
-}
-
-.logo-section h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.logo-section p {
-    max-width: 250px;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.search-section h2 {
-    margin-bottom: 10px;
-}
-
-.search-section input[type="text"] {
-    padding: 5px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    width: 150px;
-}
-
-.social-section {
-    text-align: center;
-    padding-left: 60px;
-}
-
-.social-section h3 {
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-.social-section p {
-    margin: 5px 0;
-    font-size: 0.9em;
-}
-
-.social-section a {
-    text-decoration: none;
-    color: #333;
-}
-
-.social-section a:hover {
-    text-decoration: underline;
-}
-
-.data-icons {
-    display: flex;
-    gap: 20px;
-    margin: 25px 0;
-}
-/* Fin de codigo de prueba*/

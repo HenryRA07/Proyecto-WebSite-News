@@ -150,12 +150,12 @@ main {
             border-radius: 10px;
         }
 
-
+    
 /* 2.2 Estilos de las Cartas */
 .div-card {
     background-color: #fff;
     padding: 20px;
-    margin: 15px;
+    margin: 15px 50px;
     border: 1px solid #a3a2a2;
     box-shadow: 0px 4px 8px #000;
     border-radius: 5px;
